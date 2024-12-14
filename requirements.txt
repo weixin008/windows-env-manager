@@ -1,0 +1,12 @@
+# GUI相关
+Pillow>=9.0.0
+
+# Windows系统相关
+pywin32>=228
+
+# 开发工具(可选)
+black==22.3.0
+pylint==2.12.2
+mypy==0.931
+pytest==7.1.1
+pytest-cov==3.0.0

@@ -1,0 +1,187 @@
+{
+    "系统管理": {
+        "description": "系统核心管理工具",
+        "tools": [
+            {
+                "name": "系统信息",
+                "command": "msinfo32",
+                "tooltip": "查看系统详细信息"
+            },
+            {
+                "name": "系统配置",
+                "command": "msconfig",
+                "tooltip": "配置系统启动项"
+            },
+            {
+                "name": "任务管理器",
+                "command": "taskmgr",
+                "tooltip": "管理系统进程和性能"
+            },
+            {
+                "name": "服务管理",
+                "command": "services.msc",
+                "tooltip": "管理系统服务"
+            },
+            {
+                "name": "事件查看器",
+                "command": "eventvwr.msc",
+                "tooltip": "查看系统日志"
+            },
+            {
+                "name": "计算机管理",
+                "command": "compmgmt.msc",
+                "tooltip": "系统综合管理工具"
+            },
+            {
+                "name": "性能监视器",
+                "command": "perfmon",
+                "tooltip": "监控系统性能"
+            },
+            {
+                "name": "资源监视器",
+                "command": "resmon",
+                "tooltip": "监控系统资源"
+            }
+        ]
+    },
+    "系统配置": {
+        "description": "系统设置相关工具",
+        "tools": [
+            {
+                "name": "环境变量",
+                "command": "rundll32 sysdm.cpl,EditEnvironmentVariables",
+                "tooltip": "系统环境变量设置"
+            },
+            {
+                "name": "注册表编辑器",
+                "command": "regedit",
+                "tooltip": "编辑系统注册表"
+            },
+            {
+                "name": "组策略编辑器",
+                "command": "gpedit.msc",
+                "tooltip": "编辑本地组策略"
+            },
+            {
+                "name": "证书管理器",
+                "command": "certmgr.msc",
+                "tooltip": "管理系统证书"
+            },
+            {
+                "name": "用户账户",
+                "command": "netplwiz",
+                "tooltip": "管理用户账户"
+            },
+            {
+                "name": "时间和日期",
+                "command": "timedate.cpl",
+                "tooltip": "设置系统时间"
+            },
+            {
+                "name": "区域设置",
+                "command": "intl.cpl",
+                "tooltip": "配置区域和语言"
+            },
+            {
+                "name": "电源选项",
+                "command": "powercfg.cpl",
+                "tooltip": "管理电源设置"
+            }
+        ]
+    },
+    "硬件管理": {
+        "description": "硬件相关工具",
+        "tools": [
+            {
+                "name": "设备管理器",
+                "command": "devmgmt.msc",
+                "tooltip": "管理硬件设备"
+            },
+            {
+                "name": "磁盘管理",
+                "command": "diskmgmt.msc",
+                "tooltip": "管理磁盘分区"
+            },
+            {
+                "name": "打印机管理",
+                "command": "control printers",
+                "tooltip": "管理打印机"
+            },
+            {
+                "name": "声音设置",
+                "command": "mmsys.cpl",
+                "tooltip": "配置音频设备"
+            },
+            {
+                "name": "显示设置",
+                "command": "desk.cpl",
+                "tooltip": "配置显示器"
+            }
+        ]
+    },
+    "网络工具": {
+        "description": "网络管理相关工具",
+        "tools": [
+            {
+                "name": "网络连接",
+                "command": "ncpa.cpl",
+                "tooltip": "管理网络连接"
+            },
+            {
+                "name": "远程桌面",
+                "command": "mstsc",
+                "tooltip": "远程连接其他计算机"
+            },
+            {
+                "name": "Windows防火墙",
+                "command": "firewall.cpl",
+                "tooltip": "配置防火墙"
+            },
+            {
+                "name": "高级防火墙",
+                "command": "wf.msc",
+                "tooltip": "高级防火墙配置"
+            },
+            {
+                "name": "共享管理",
+                "command": "fsmgmt.msc",
+                "tooltip": "管理网络共享"
+            }
+        ]
+    },
+    "安全工具": {
+        "description": "系统安全相关工具",
+        "tools": [
+            {
+                "name": "Windows安全中心",
+                "command": "wscui.cpl",
+                "tooltip": "Windows安全设置"
+            },
+            {
+                "name": "本地安全策略",
+                "command": "secpol.msc",
+                "tooltip": "配置安全策略"
+            },
+            {
+                "name": "凭据管理器",
+                "command": "control /name Microsoft.CredentialManager",
+                "tooltip": "管理系统凭据"
+            }
+        ]
+    },
+    "命令行工具": {
+        "description": "命令行相关工具",
+        "tools": [
+            {
+                "name": "命令提示符",
+                "command": "cmd",
+                "tooltip": "Windows命令行"
+            },
+            {
+                "name": "PowerShell",
+                "command": "powershell",
+                "tooltip": "Windows PowerShell"
+            }
+        ]
+    }
+}

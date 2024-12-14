@@ -1,0 +1,396 @@
+{
+    "Java": {
+        "paths": [
+            "Program Files\\Java*",
+            "Program Files (x86)\\Java*",
+            "Users\\*\\AppData\\Local\\Programs\\Java*",
+            "Java*",
+            "jdk*",
+            "jre*"
+        ],
+        "bin_paths": ["bin", "jre\\bin"],
+        "version_cmd": "java -version",
+        "env_vars": ["JAVA_HOME", "JRE_HOME"],
+        "recommendations": [
+            "建议设置 JAVA_HOME=<JDK安装目录>，例如：C:\\Program Files\\Java\\jdk1.8.0_301",
+            "建议设置 JRE_HOME=<JRE安装目录>，例如：C:\\Program Files\\Java\\jre1.8.0_301",
+            "建议将 %JAVA_HOME%\\bin 和 %JRE_HOME%\\bin 添加到 PATH 环境变量",
+            "建议配置 CLASSPATH=.;%JAVA_HOME%\\lib;%JAVA_HOME%\\lib\\tools.jar",
+            "建议使用 SDKMAN 管理多个 Java 版本",
+            "建议配置 Maven 和 Gradle 以进行项目构建"
+        ]
+    },
+    "Python": {
+        "paths": [
+            "Python*",
+            "Program Files\\Python*",
+            "Users\\*\\AppData\\Local\\Programs\\Python*",
+            "Anaconda*",
+            "Miniconda*"
+        ],
+        "bin_paths": ["", "Scripts"],
+        "version_cmd": "python --version",
+        "env_vars": ["PYTHONPATH", "PYTHONHOME"],
+        "recommendations": [
+            "建议将 <Python安装目录> 添加到 PATH 环境变量",
+            "建议将 <Python安装目录>\\Scripts 添加到 PATH 环境变量",
+            "建议设置 PYTHONPATH 以添加自定义模块路径，例如：.;C:\\MyPythonLibs",
+            "建议设置 PYTHONHOME=<Python安装目录>",
+            "建议使用 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple 配置国内镜像源",
+            "建议使用 pyenv 或 Anaconda 管理多个 Python 版本",
+            "建议安装 virtualenv 创建独立的项目环境"
+        ]
+    },
+    "Node.js": {
+        "paths": [
+            "Program Files\\nodejs",
+            "nodejs",
+            "Users\\*\\AppData\\Roaming\\nvm"
+        ],
+        "bin_paths": ["", "node_modules\\.bin"],
+        "version_cmd": "node --version",
+        "env_vars": ["NODE_PATH"],
+        "recommendations": [
+            "建议将 <Node.js安装目录> 添加到 PATH 环境变量，例如：C:\\Program Files\\nodejs",
+            "建议将 %APPDATA%\\npm 添加到 PATH 环境变量",
+            "建议设置 NODE_PATH=%APPDATA%\\npm\\node_modules",
+            "建议执行 npm config set registry https://registry.npmmirror.com 配置国内镜像",
+            "建议使用 nvm-windows 管理多个 Node.js 版本",
+            "建议配置 npm 全局模块目录：npm config set prefix '%APPDATA%\\npm'",
+            "建议安装常用全局工具：npm i -g yarn pnpm typescript"
+        ]
+    },
+    "Git": {
+        "paths": [
+            "Program Files\\Git",
+            "Git"
+        ],
+        "bin_paths": ["bin", "cmd"],
+        "version_cmd": "git --version",
+        "env_vars": ["GIT_HOME"],
+        "recommendations": [
+            "建议设置 GIT_HOME=<Git安装目录>，例如：C:\\Program Files\\Git",
+            "建议将 %GIT_HOME%\\bin 和 %GIT_HOME%\\cmd 添加到 PATH 环境变量",
+            "建议配置用户信息：git config --global user.name \"你的名字\" 和 user.email \"你的邮箱\"",
+            "建议配置默认分支：git config --global init.defaultBranch main",
+            "建议配置换行符：git config --global core.autocrlf true",
+            "建议配置代理：git config --global http.proxy http://127.0.0.1:7890",
+            "建议配置 .gitignore_global 文件：git config --global core.excludesfile ~/.gitignore_global"
+        ]
+    },
+    "Visual Studio Code": {
+        "paths": [
+            "Users\\*\\AppData\\Local\\Programs\\Microsoft VS Code",
+            "Program Files\\Microsoft VS Code"
+        ],
+        "bin_paths": ["bin"],
+        "version_cmd": "code --version",
+        "env_vars": ["VSCODE_HOME"],
+        "recommendations": [
+            "建议将 VS Code 安装目录添加到 PATH 环境变量，例如：C:\\Users\\{用户名}\\AppData\\Local\\Programs\\Microsoft VS Code\\bin",
+            "建议安装必要的扩展：",
+            "  - Python: ms-python.python",
+            "  - Java: redhat.java",
+            "  - C/C++: ms-vscode.cpptools",
+            "  - Git: GitLens",
+            "建议配置 settings.json：",
+            "  - \"editor.formatOnSave\": true",
+            "  - \"files.autoSave\": \"afterDelay\"",
+            "  - \"terminal.integrated.defaultProfile.windows\": \"PowerShell\"",
+            "建议配置代理：在 settings.json 中设置 http.proxy",
+            "建议启用同步功能以备份配置"
+        ]
+    },
+    "Docker": {
+        "paths": [
+            "Program Files\\Docker",
+            "Program Files\\Docker Desktop"
+        ],
+        "bin_paths": [""],
+        "version_cmd": "docker --version",
+        "env_vars": ["DOCKER_HOME"],
+        "recommendations": [
+            "建议设置 DOCKER_HOME=<Docker安装目录>，例如：C:\\Program Files\\Docker",
+            "建议将 %DOCKER_HOME% 添加到 PATH 环境变量",
+            "建议在 %USERPROFILE%\\.docker\\daemon.json 中配置镜像加速：",
+            "  {\n    \"registry-mirrors\": [\"https://docker.mirrors.ustc.edu.cn\"]\n  }",
+            "建议配置 WSL2：wsl --set-default-version 2",
+            "建议在 Docker Desktop 中调整内存限制和CPU使用",
+            "建议创建 docker-compose.yml 管理多容器应用"
+        ]
+    },
+    "Maven": {
+        "paths": [
+            "Program Files\\Apache\\maven*",
+            "apache-maven*"
+        ],
+        "bin_paths": ["bin"],
+        "version_cmd": "mvn --version",
+        "env_vars": ["M2_HOME", "MAVEN_HOME"],
+        "recommendations": [
+            "建议设置 M2_HOME=<Maven安装目录>，例如：C:\\Program Files\\Apache\\maven",
+            "建议将 %M2_HOME%\\bin 添加到 PATH 环境变量",
+            "建议配置 MAVEN_OPTS=-Xms256m -Xmx512m",
+            "建议在 settings.xml 中配置阿里云镜像源",
+            "建议配置本地仓库路径：<localRepository>D:\\maven-repository</localRepository>",
+            "建议设置 MAVEN_HOME 等于 M2_HOME",
+            "建议将常用的依赖版本统一在 parent pom.xml 中管理"
+        ]
+    },
+    "Gradle": {
+        "paths": [
+            "Program Files\\Gradle",
+            "Gradle*"
+        ],
+        "bin_paths": ["bin"],
+        "version_cmd": "gradle --version",
+        "env_vars": ["GRADLE_HOME"],
+        "recommendations": [
+            "建议设置 GRADLE_HOME=<Gradle安装目录>，例如：C:\\Program Files\\Gradle\\gradle-7.4.2",
+            "建议将 %GRADLE_HOME%\\bin 添加到 PATH 环境变量",
+            "建议在 GRADLE_USER_HOME\\.gradle\\init.gradle 中配置阿里云镜像：",
+            "  repositories {",
+            "    mavenLocal()",
+            "    maven { url 'https://maven.aliyun.com/repository/public' }",
+            "    mavenCentral()",
+            "  }",
+            "建议在 gradle.properties 中配置：",
+            "  org.gradle.daemon=true",
+            "  org.gradle.parallel=true",
+            "  org.gradle.jvmargs=-Xmx2048m"
+        ]
+    },
+    "Android Studio": {
+        "paths": [
+            "Program Files\\Android\\Android Studio",
+            "Users\\*\\AppData\\Local\\Android\\Sdk"
+        ],
+        "bin_paths": ["bin", "platform-tools", "tools\\bin"],
+        "version_cmd": "studio64.exe --version",
+        "env_vars": ["ANDROID_HOME", "ANDROID_SDK_ROOT"],
+        "recommendations": [
+            "建议设置 ANDROID_HOME=<Android SDK目录>，例如：C:\\Users\\{用户名}\\AppData\\Local\\Android\\Sdk",
+            "建议设置 ANDROID_SDK_ROOT 等于 ANDROID_HOME",
+            "建议将以下目录添加到 PATH：",
+            "  - %ANDROID_HOME%\\platform-tools",
+            "  - %ANDROID_HOME%\\tools",
+            "  - %ANDROID_HOME%\\tools\\bin",
+            "建议在 gradle.properties 中配置：",
+            "  android.useAndroidX=true",
+            "  org.gradle.jvmargs=-Xmx2048m",
+            "  android.enableJetifier=true",
+            "建议配置 Android Studio 代理和 SDK 镜像源：https://mirrors.tuna.tsinghua.edu.cn",
+            "建议在 File -> Settings -> Build,Execution,Deployment -> Gradle 中设置离线模式"
+        ]
+    },
+    "MySQL": {
+        "paths": [
+            "Program Files\\MySQL",
+            "MySQL"
+        ],
+        "bin_paths": ["bin"],
+        "version_cmd": "mysql --version",
+        "env_vars": ["MYSQL_HOME"],
+        "recommendations": [
+            "建议设置 MYSQL_HOME=<MySQL安装目录>，例如：C:\\Program Files\\MySQL\\MySQL Server 8.0",
+            "建议将 %MYSQL_HOME%\\bin 添加到 PATH 环境变量",
+            "建议在 my.ini 中配置：",
+            "  [mysqld]",
+            "  character-set-server=utf8mb4",
+            "  collation-server=utf8mb4_unicode_ci",
+            "  default-storage-engine=INNODB",
+            "  max_connections=200",
+            "  innodb_buffer_pool_size=1G",
+            "建议设置 root 密码：ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';",
+            "建议创建普通用户：CREATE USER 'dev'@'localhost' IDENTIFIED BY 'password';",
+            "建议配置定期备份任务",
+            "建议安装 MySQL Workbench 进行可视化管理"
+        ]
+    },
+    "Redis": {
+        "paths": [
+            "Program Files\\Redis",
+            "Redis"
+        ],
+        "bin_paths": [""],
+        "version_cmd": "redis-server --version",
+        "env_vars": ["REDIS_HOME"],
+        "recommendations": [
+            "建议设置 REDIS_HOME=<Redis安装目录>，例如：C:\\Program Files\\Redis",
+            "建议将 %REDIS_HOME% 添加到 PATH 环境变量",
+            "建议在 redis.windows.conf 中配置：",
+            "  - requirepass <your_password>  # 设置访问密码",
+            "  - bind 127.0.0.1  # 限制访问IP",
+            "  - appendonly yes  # 开启AOF持久化",
+            "  - appendfsync everysec  # 持久化策略",
+            "  - maxmemory 512mb  # 最大内存限制",
+            "建议使用 redis-server --service-install 将Redis注册为Windows服务",
+            "建议安装 Another Redis Desktop Manager 进行可视化管理",
+            "建议配置定期备份策略：save 900 1"
+        ]
+    },
+    "MongoDB": {
+        "paths": [
+            "Program Files\\MongoDB\\Server*",
+            "MongoDB*"
+        ],
+        "bin_paths": ["bin"],
+        "version_cmd": "mongod --version",
+        "env_vars": ["MONGODB_HOME"],
+        "recommendations": [
+            "建议设置 MONGODB_HOME=<MongoDB安装目录>，例如：C:\\Program Files\\MongoDB\\Server\\6.0",
+            "建议将 %MONGODB_HOME%\\bin 添加到 PATH 环境变量",
+            "建议在 mongod.cfg 中配置：",
+            "  storage:",
+            "    dbPath: D:\\mongodb\\data",
+            "    journal.enabled: true",
+            "  systemLog:",
+            "    destination: file",
+            "    path: D:\\mongodb\\logs\\mongod.log",
+            "  security:",
+            "    authorization: enabled",
+            "建议使用 mongod --install 将MongoDB配置为Windows服务",
+            "建议创建管理员用户：db.createUser({user:'admin',pwd:'password',roles:['root']})",
+            "建议安装 MongoDB Compass 进行可视化管理",
+            "建议配置数据备份计划：mongodump --out D:\\backup"
+        ]
+    },
+    "PostgreSQL": {
+        "paths": [
+            "Program Files\\PostgreSQL",
+            "PostgreSQL"
+        ],
+        "bin_paths": ["bin"],
+        "version_cmd": "psql --version",
+        "env_vars": ["PGSQL_HOME"],
+        "recommendations": [
+            "建议设置 PGSQL_HOME=<PostgreSQL安装目录>，例如：C:\\Program Files\\PostgreSQL\\14",
+            "建议将 %PGSQL_HOME%\\bin 添加到 PATH 环境变量",
+            "建议在 postgresql.conf 中配置：",
+            "  - listen_addresses = 'localhost'  # 监听地址",
+            "  - max_connections = 100  # 最大连接数",
+            "  - shared_buffers = 1GB  # 共享缓冲区",
+            "  - work_mem = 16MB  # 工作内存",
+            "  - maintenance_work_mem = 256MB  # 维护工作内存",
+            "建议在 pg_hba.conf 中配置访问控制：",
+            "  host    all    all    127.0.0.1/32    scram-sha-256",
+            "建议创建普通用户：CREATE ROLE dev LOGIN PASSWORD 'password' CREATEDB;",
+            "建议配置数据库备份：pg_dump -Fc dbname > D:\\backup\\db.dump",
+            "建议安装 pgAdmin 进行可视化管理",
+            "建议使用 timescaledb 扩展处理时序数据"
+        ]
+    },
+    "Nginx": {
+        "paths": [
+            "Program Files\\nginx*",
+            "nginx*"
+        ],
+        "bin_paths": [""],
+        "version_cmd": "nginx -v",
+        "env_vars": ["NGINX_HOME"],
+        "recommendations": [
+            "建议设置 NGINX_HOME=<Nginx安装目录>，例如：C:\\nginx",
+            "建议将 %NGINX_HOME% 添加到 PATH 环境变量",
+            "建议在 nginx.conf 中配置：",
+            "  - worker_processes auto;  # 工作进程数",
+            "  - worker_connections 1024;  # 每个进程的最大连接数",
+            "  - keepalive_timeout 65;  # 长连接超时时间",
+            "  - gzip on;  # 启用压缩",
+            "  - client_max_body_size 10m;  # 客户端最大请求体积",
+            "建议配置 HTTPS：",
+            "  - ssl_certificate cert.pem;",
+            "  - ssl_certificate_key cert.key;",
+            "建议将 Nginx 注册为 Windows 服务",
+            "建议配置访问日志轮转",
+            "建议使用 Nginx Proxy Manager 进行可视化管理"
+        ]
+    },
+    "Rust": {
+        "paths": [
+            "Users\\*\\.cargo",
+            ".rustup"
+        ],
+        "bin_paths": ["bin"],
+        "version_cmd": "rustc --version",
+        "env_vars": ["CARGO_HOME", "RUSTUP_HOME"],
+        "recommendations": [
+            "建议设置 CARGO_HOME=<Cargo安装目录>，例如：C:\\Users\\{用户名}\\.cargo",
+            "建议设置 RUSTUP_HOME=<Rustup安装目录>，例如：C:\\Users\\{用户名}\\.rustup",
+            "建议将 %CARGO_HOME%\\bin 添加到 PATH 环境变量",
+            "建议在 .cargo/config.toml 中配置国内镜像源：",
+            "  [source.crates-io]",
+            "  replace-with = 'ustc'",
+            "  [source.ustc]",
+            "  registry = \"sparse+https://mirrors.ustc.edu.cn/crates.io-index/\"",
+            "建议安装必要的组件：rustup component add rustfmt clippy",
+            "建议安装 rust-analyzer 提供 IDE 支持",
+            "建议使用 cross 进行跨平台编译",
+            "建议配置 RUSTFLAGS=\"-C target-cpu=native\" 优化性能"
+        ]
+    },
+    "Go": {
+        "paths": [
+            "Program Files\\Go",
+            "Go"
+        ],
+        "bin_paths": ["bin"],
+        "version_cmd": "go version",
+        "env_vars": ["GOROOT", "GOPATH"],
+        "recommendations": [
+            "建议设置 GOROOT=<Go安装目录>，例如：C:\\Program Files\\Go",
+            "建议设置 GOPATH=<Go工作目录>，例如：D:\\GoPath",
+            "建议将 %GOROOT%\\bin 和 %GOPATH%\\bin 添加到 PATH 环境变量",
+            "建议在 GOPATH\\env 中配置国内代理：",
+            "  GOPROXY=https://goproxy.cn,direct",
+            "  GOSUMDB=sum.golang.google.cn",
+            "  GO111MODULE=on",
+            "建议安装必要的工具：",
+            "  go install golang.org/x/tools/gopls@latest",
+            "  go install github.com/go-delve/delve/cmd/dlv@latest",
+            "建议使用 golangci-lint 进行代码检查",
+            "建议配置 go.mod 管理依赖",
+            "建议使用 go work 管理多模块项目"
+        ]
+    },
+    "Ruby": {
+        "paths": [
+            "Ruby*",
+            "Program Files\\Ruby*"
+        ],
+        "bin_paths": ["bin"],
+        "version_cmd": "ruby --version",
+        "env_vars": ["RUBY_HOME"],
+        "recommendations": [
+            "建议设置 RUBY_HOME=<Ruby安装目录>，例如：C:\\Ruby31-x64",
+            "建议将 %RUBY_HOME%\\bin 添加到 PATH 环境变量",
+            "建议配置 RubyGems 镜像源：gem sources --add https://mirrors.tuna.tsinghua.edu.cn/rubygems/ --remove https://rubygems.org/",
+            "建议安装必要的开发工具：gem install bundler rake",
+            "建议使用 rbenv-win 管理多个 Ruby 版本",
+            "建议配置 Gemfile 管理项目依赖",
+            "建议安装 DevKit 以编译原生扩展"
+        ]
+    },
+    "PHP": {
+        "paths": [
+            "PHP*",
+            "Program Files\\PHP*",
+            "xampp\\php*"
+        ],
+        "bin_paths": [""],
+        "version_cmd": "php --version",
+        "env_vars": ["PHP_HOME"],
+        "recommendations": [
+            "建议设置 PHP_HOME=<PHP安装目录>，例如：C:\\PHP8",
+            "建议将 %PHP_HOME% 添加到 PATH 环境变量",
+            "建议在 php.ini 中配置：",
+            "  - memory_limit = 256M",
+            "  - max_execution_time = 300",
+            "  - post_max_size = 50M",
+            "  - upload_max_filesize = 50M",
+            "  - date.timezone = Asia/Shanghai",
+            "建议配置 Composer：composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/",
+            "建议安装 Xdebug 扩展进行调试",
+            "建议使用 XAMPP 或 WampServer 搭建完整开发环境"
+        ]
+    }
+} 
